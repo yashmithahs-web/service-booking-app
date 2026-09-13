@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Service Booking App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">ServiceBook</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sign Up Header -->
+    <section class="page-header">
+        <h1>Create Your Account</h1>
+        <p>Join ServiceBook and start booking services today</p>
+    </section>
+
+    <!-- Sign Up Form -->
+    <section class="signup-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <!-- Account Type Selection -->
+                <div class="account-type">
+                    <label>I am a:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="customer" name="accountType" value="customer" checked>
+                        <label for="customer">Customer (Looking for services)</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="provider" name="accountType" value="provider">
+                        <label for="provider">Service Provider (Offering services)</label>
+                    </div>
+                </div>
+
+                <!-- Sign Up Form -->
+                <form id="signupForm" onsubmit="handleSignup(event)">
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group">
+                        <label for="password">Password *</label>
+                        <input type="password" id="password" name="password" required placeholder="Create a password">
+                    </div>
+
+                    <!-- Confirm Password -->
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password *</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
+                    </div>
+
+                    <!-- Address -->
+                    <div class="form-group">
+                        <label for="address">Address *</label>
+                        <input type="text" id="address" name="address" required placeholder="Enter your address">
+                    </div>
+
+                    <!-- City -->
+                    <div class="form-group">
+                        <label for="city">City *</label>
+                        <input type="text" id="city" name="city" required placeholder="Enter your city">
+                    </div>
+
+                    <!-- Service Type (for providers only) -->
+                    <div class="form-group" id="serviceTypeGroup" style="display: none;">
+                        <label for="serviceType">Service Type *</label>
+                        <select id="serviceType" name="serviceType">
+                            <option value="">Select a service</option>
+                            <option value="plumbing">Plumbing</option>
+                            <option value="electrical">Electrical</option>
+                            <option value="cleaning">Cleaning</option>
+                            <option value="tutoring">Tutoring</option>
+                            <option value="painting">Painting</option>
+                            <option value="fitness">Fitness</option>
+                        </select>
+                    </div>
+
+                    <!-- Years of Experience (for providers only) -->
+                    <div class="form-group" id="experienceGroup" style="display: none;">
+                        <label for="experience">Years of Experience *</label>
+                        <input type="number" id="experience" name="experience" min="0" placeholder="Enter years of experience">
+                    </div>
+
+                    <!-- Terms & Conditions -->
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the Terms and Conditions *</label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-primary">Create Account</button>
+                </form>
+
+                <!-- Already have account -->
+                <p class="login-link">Already have an account? <a href="#login">Login here</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Service Booking App. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
