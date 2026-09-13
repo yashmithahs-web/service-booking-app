@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Service Booking App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">ServiceBook</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Services Header -->
+    <section class="page-header">
+        <h1>Our Services</h1>
+        <p>Browse all available services in your area</p>
+    </section>
+
+    <!-- Search & Filter -->
+    <section class="services-container">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search services...">
+                <button onclick="searchServices()">Search</button>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Plumbing</h3>
+                    <p>Professional plumbing repairs and installations</p>
+                    <p class="price">₹500 - ₹2000</p>
+                    <p class="rating">⭐ 4.8 (250 reviews)</p>
+                    <button class="btn-book">Book Now</button>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Electrical</h3>
+                    <p>Electrical repairs, wiring, and installations</p>
+                    <p class="price">₹400 - ₹1800</p>
+                    <p class="rating">⭐ 4.7 (180 reviews)</p>
+                    <button class="btn-book">Book Now</button>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card">
+                    <div class="service-icon">🧹</div>
+                    <h3>Cleaning</h3>
+                    <p>Professional home and office cleaning services</p>
+                    <p class="price">₹300 - ₹1500</p>
+                    <p class="rating">⭐ 4.9 (420 reviews)</p>
+                    <button class="btn-book">Book Now</button>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card">
+                    <div class="service-icon">📚</div>
+                    <h3>Tutoring</h3>
+                    <p>Expert tutors for all academic subjects</p>
+                    <p class="price">₹200 - ₹800</p>
+                    <p class="rating">⭐ 4.6 (310 reviews)</p>
+                    <button class="btn-book">Book Now</button>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Painting</h3>
+                    <p>Interior and exterior painting services</p>
+                    <p class="price">₹600 - ₹3000</p>
+                    <p class="rating">⭐ 4.8 (190 reviews)</p>
+                    <button class="btn-book">Book Now</button>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="service-card">
+                    <div class="service-icon">🏋️</div>
+                    <h3>Fitness</h3>
+                    <p>Personal training and fitness coaching</p>
+                    <p class="price">₹1000 - ₹3000</p>
+                    <p class="rating">⭐ 4.7 (150 reviews)</p>
+                    <button class="btn-book">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Service Booking App. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
